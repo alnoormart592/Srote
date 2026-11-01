@@ -1,4 +1,4 @@
-
+v
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,140 +7,399 @@
 <title>Alnoor Mart - Online Shopping</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f3f6fc;color:#24334b}
-header{
-background:linear-gradient(120deg,#09265a,#087f83,#16a66f);
-color:white;padding:18px 5%;display:flex;justify-content:space-between;
-align-items:center;flex-wrap:wrap;gap:15px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-.logo{font-size:28px;font-weight:bold}
-.logo span{color:#ffe36e}
-nav{display:flex;gap:18px;flex-wrap:wrap}
-nav a{color:white;text-decoration:none;font-weight:bold}
-nav a:hover{color:#ffe36e}
 
-.hero{
-min-height:390px;padding:65px 7%;color:white;
-display:flex;align-items:center;justify-content:space-between;
-flex-wrap:wrap;gap:25px;
-background:
-radial-gradient(circle at 80% 20%,#ffffff55,transparent 25%),
-radial-gradient(circle at 10% 90%,#18d69c66,transparent 30%),
-linear-gradient(120deg,#09245c,#087e91,#16a66f);
+body {
+    background: #f3f6fc;
+    color: #24334b;
 }
-.hero-content{max-width:600px}
-.hero h1{font-size:clamp(35px,5vw,55px);margin-bottom:18px}
-.hero h1 span{color:#ffe36e}
-.hero p{font-size:18px;line-height:1.7;margin-bottom:25px}
-.shop-btn{display:inline-block;background:#ffe36e;color:#12305c;
-padding:14px 27px;border-radius:30px;text-decoration:none;font-weight:bold}
-.hero-art{font-size:100px;filter:drop-shadow(0 12px 12px #0004)}
 
-section{padding:55px 6%}
-.heading{text-align:center;font-size:30px;color:#123b66;margin-bottom:30px}
-.heading span{color:#0ba77a}
+header {
+    background: linear-gradient(120deg,#09265a,#087f83,#16a66f);
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffe36e;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe36e;
+}
+
+/* WELCOME SECTION */
+
+.hero {
+    min-height: 390px;
+    padding: 65px 7%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    background:
+    radial-gradient(circle at 80% 20%,#ffffff55,transparent 25%),
+    radial-gradient(circle at 10% 90%,#18d69c66,transparent 30%),
+    linear-gradient(120deg,#09245c,#087e91,#16a66f);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: clamp(35px,5vw,55px);
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #ffe36e;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.shop-btn {
+    display: inline-block;
+    background: #ffe36e;
+    color: #12305c;
+    padding: 14px 27px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-art {
+    font-size: 100px;
+    filter: drop-shadow(0 12px 12px #0004);
+}
+
+/* SECTIONS */
+
+section {
+    padding: 55px 6%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: #123b66;
+    margin-bottom: 30px;
+}
+
+.heading span {
+    color: #0ba77a;
+}
 
 /* DEPARTMENTS */
-.department-grid{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));
-gap:18px;
+
+.department-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(155px,1fr));
+    gap: 18px;
 }
-.department{
-padding:25px 12px;text-align:center;border-radius:18px;
-box-shadow:0 5px 15px #0002;cursor:pointer;
-transition:.3s;border:2px solid transparent;
+
+.department {
+    padding: 25px 12px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px #0002;
+    cursor: pointer;
+    transition: .3s;
+    border: 2px solid transparent;
 }
-.department:hover{transform:translateY(-7px);border-color:#fff}
-.department .emoji{font-size:48px;margin-bottom:12px}
-.department h3{font-size:17px;color:#18385d}
-.department:nth-child(1){background:linear-gradient(135deg,#d6fff0,#a5f0d0)}
-.department:nth-child(2){background:linear-gradient(135deg,#d9edff,#a8d5ff)}
-.department:nth-child(3){background:linear-gradient(135deg,#ffe7ce,#ffc998)}
-.department:nth-child(4){background:linear-gradient(135deg,#fbdcf2,#f2b8e4)}
-.department:nth-child(5){background:linear-gradient(135deg,#fff3bd,#ffe18a)}
-.department:nth-child(6){background:linear-gradient(135deg,#e7ddff,#c9b7ff)}
+
+.department:hover {
+    transform: translateY(-7px);
+    border-color: white;
+}
+
+.department .emoji {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.department h3 {
+    font-size: 17px;
+    color: #18385d;
+}
+
+.department:nth-child(1) {
+    background: linear-gradient(135deg,#d6fff0,#a5f0d0);
+}
+
+.department:nth-child(2) {
+    background: linear-gradient(135deg,#d9edff,#a8d5ff);
+}
+
+.department:nth-child(3) {
+    background: linear-gradient(135deg,#ffe7ce,#ffc998);
+}
+
+.department:nth-child(4) {
+    background: linear-gradient(135deg,#fbdcf2,#f2b8e4);
+}
+
+.department:nth-child(5) {
+    background: linear-gradient(135deg,#fff3bd,#ffe18a);
+}
+
+.department:nth-child(6) {
+    background: linear-gradient(135deg,#e7ddff,#c9b7ff);
+}
 
 /* PRODUCTS */
-.products-section{
-background:linear-gradient(135deg,#e4f2ff,#f0fff7,#fff2e4)
-}
-.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:30px}
-.filter-btn{
-border:none;padding:11px 17px;border-radius:25px;
-background:white;color:#17416c;font-weight:bold;cursor:pointer;
-box-shadow:0 3px 10px #0001;
-}
-.filter-btn.active,.filter-btn:hover{background:#087f83;color:white}
 
-.product-grid{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:22px
+.products-section {
+    background: linear-gradient(135deg,#e4f2ff,#f0fff7,#fff2e4);
 }
-.product{
-background:white;border-radius:17px;overflow:hidden;
-box-shadow:0 5px 18px #0002;transition:.3s
-}
-.product:hover{transform:translateY(-6px)}
-.product-image{
-height:165px;display:flex;align-items:center;justify-content:center;
-font-size:75px;background:linear-gradient(140deg,#d9f4ed,#e5eaff)
-}
-.product-info{padding:17px}
-.product-info h3{margin-bottom:7px;font-size:18px}
-.product-category{font-size:12px;color:#777;margin-bottom:8px}
-.price{font-size:19px;font-weight:bold;color:#07966c;margin-bottom:13px}
-.add-btn{
-width:100%;border:none;padding:12px;border-radius:9px;
-background:linear-gradient(100deg,#087f83,#16ae76);
-color:white;font-weight:bold;cursor:pointer
-}
-.add-btn:hover{background:#075b69}
 
-/* CART */
-.cart{
-background:white;border-radius:16px;max-width:750px;
-margin:auto;padding:25px;box-shadow:0 5px 20px #0001
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
-.cart-item{
-display:flex;justify-content:space-between;align-items:center;
-gap:10px;padding:12px 0;border-bottom:1px solid #ddd
+
+.filter-btn {
+    border: none;
+    padding: 11px 17px;
+    border-radius: 25px;
+    background: white;
+    color: #17416c;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 10px #0001;
 }
-.remove-btn{border:none;background:#ffe4e4;color:#c22;padding:7px 10px;border-radius:5px;cursor:pointer}
-.checkout{
-width:100%;margin-top:20px;padding:15px;background:#16a34a;
-color:white;border:none;border-radius:10px;font-size:17px;
-font-weight:bold;cursor:pointer
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #087f83;
+    color: white;
 }
-.checkout:hover{background:#087b39}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(205px,1fr));
+    gap: 22px;
+}
+
+.product {
+    background: white;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px #0002;
+    transition: .3s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+}
+
+.product-image {
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    background: linear-gradient(140deg,#d9f4ed,#e5eaff);
+}
+
+.product-info {
+    padding: 17px;
+}
+
+.product-info h3 {
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+
+.product-category {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 19px;
+    font-weight: bold;
+    color: #07966c;
+    margin-bottom: 13px;
+}
+
+.add-btn {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 9px;
+    background: linear-gradient(100deg,#087f83,#16ae76);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #075b69;
+}
+
+/* SHOPPING CART */
+
+.cart {
+    background: white;
+    border-radius: 16px;
+    max-width: 750px;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0 5px 20px #0001;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.remove-btn {
+    border: none;
+    background: #ffe4e4;
+    color: #c22;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background: #087b39;
+}
 
 /* CONTACT */
-.contact{
-text-align:center;background:linear-gradient(120deg,#09245c,#087f83,#16a66f);
-color:white
-}
-.contact h2{font-size:32px;margin-bottom:15px}
-.contact p{margin-bottom:22px;line-height:1.7}
-.whatsapp{
-display:inline-block;background:#20cf70;color:white;
-text-decoration:none;padding:15px 28px;border-radius:30px;font-weight:bold
+
+.contact {
+    text-align: center;
+    background: linear-gradient(120deg,#09245c,#087f83,#16a66f);
+    color: white;
 }
 
-footer{background:#071d3d;color:white;text-align:center;padding:25px;line-height:1.8}
-
-@media(max-width:600px){
-header{justify-content:center;text-align:center}
-nav{justify-content:center;gap:13px}
-.hero{text-align:center;justify-content:center}
-.hero-art{font-size:75px}
-section{padding:40px 5%}
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
 }
+
+.contact p {
+    margin-bottom: 22px;
+    line-height: 1.7;
+}
+
+.whatsapp {
+    display: inline-block;
+    background: #20cf70;
+    color: white;
+    text-decoration: none;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    background: #071d3d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 13px;
+    }
+
+    .hero {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-art {
+        font-size: 75px;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-<div class="logo">🛒 ALNOOR <span>MART</span></div>
+
+<div class="logo">
+🛒 ALNOOR <span>MART</span>
+</div>
+
 <nav>
 <a href="#home">Home</a>
 <a href="#departments">Departments</a>
@@ -148,27 +407,45 @@ section{padding:40px 5%}
 <a href="#cart">My Cart 🛒</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
-<!-- WELCOME -->
+<!-- WELCOME SECTION -->
+
 <div class="hero" id="home">
+
 <div class="hero-content">
+
 <h1>Welcome to <span>Alnoor Mart</span></h1>
+
 <p>
 Everything you need, all in one place!
 Shop Grocery, Karyana, Cycles, Furniture,
 Garments and Stationery at Alnoor Mart.
 </p>
-<a href="#departments" class="shop-btn">Explore Our Store →</a>
+
+<a href="#departments" class="shop-btn">
+Explore Our Store →
+</a>
+
 </div>
-<div class="hero-art">🛒 🛍️</div>
+
+<div class="hero-art">
+🛒 🛍️
+</div>
+
 </div>
 
 <!-- DEPARTMENTS -->
+
 <section id="departments">
-<h2 class="heading">Our <span>Departments</span></h2>
+
+<h2 class="heading">
+Our <span>Departments</span>
+</h2>
 
 <div class="department-grid">
+
 <div class="department" onclick="filterProducts('Grocery & Karyana')">
 <div class="emoji">🛒</div>
 <h3>Grocery & Karyana</h3>
@@ -198,290 +475,432 @@ Garments and Stationery at Alnoor Mart.
 <div class="emoji">🏪</div>
 <h3>All Products</h3>
 </div>
+
 </div>
 </section>
 
 <!-- PRODUCTS -->
+
 <section class="products-section" id="products">
-<h2 class="heading">Explore Our <span>Products</span></h2>
+
+<h2 class="heading">
+Explore Our <span>Products</span>
+</h2>
 
 <div class="filters">
+
 <button class="filter-btn active" onclick="filterProducts('All',this)">All</button>
+
 <button class="filter-btn" onclick="filterProducts('Grocery & Karyana',this)">Grocery & Karyana</button>
+
 <button class="filter-btn" onclick="filterProducts('Cycles',this)">Cycles</button>
+
 <button class="filter-btn" onclick="filterProducts('Furniture',this)">Furniture</button>
+
 <button class="filter-btn" onclick="filterProducts('Garments',this)">Garments</button>
+
 <button class="filter-btn" onclick="filterProducts('Stationery',this)">Stationery</button>
+
 </div>
 
 <div class="product-grid" id="productGrid">
 
 <!-- GROCERY -->
+
 <div class="product" data-category="Grocery & Karyana">
 <div class="product-image">🍚</div>
 <div class="product-info">
-<h3>Rice</h3><div class="product-category">Grocery & Karyana</div>
+<h3>Rice</h3>
+<div class="product-category">Grocery & Karyana</div>
 <div class="price">Rs. 350</div>
 <button class="add-btn" onclick="addToCart('Rice',350)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <div class="product" data-category="Grocery & Karyana">
 <div class="product-image">🌾</div>
 <div class="product-info">
-<h3>Wheat Flour</h3><div class="product-category">Grocery & Karyana</div>
+<h3>Wheat Flour</h3>
+<div class="product-category">Grocery & Karyana</div>
 <div class="price">Rs. 180</div>
 <button class="add-btn" onclick="addToCart('Wheat Flour',180)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <div class="product" data-category="Grocery & Karyana">
 <div class="product-image">🫖</div>
 <div class="product-info">
-<h3>Tea Pack</h3><div class="product-category">Grocery & Karyana</div>
+<h3>Tea Pack</h3>
+<div class="product-category">Grocery & Karyana</div>
 <div class="price">Rs. 450</div>
 <button class="add-btn" onclick="addToCart('Tea Pack',450)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <div class="product" data-category="Grocery & Karyana">
 <div class="product-image">🧴</div>
 <div class="product-info">
-<h3>Cooking Oil</h3><div class="product-category">Grocery & Karyana</div>
+<h3>Cooking Oil</h3>
+<div class="product-category">Grocery & Karyana</div>
 <div class="price">Rs. 550</div>
 <button class="add-btn" onclick="addToCart('Cooking Oil',550)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <!-- CYCLES -->
+
 <div class="product" data-category="Cycles">
 <div class="product-image">🚲</div>
 <div class="product-info">
-<h3>Mountain Bicycle</h3><div class="product-category">Cycles</div>
+<h3>Mountain Bicycle</h3>
+<div class="product-category">Cycles</div>
 <div class="price">Rs. 18,000</div>
 <button class="add-btn" onclick="addToCart('Mountain Bicycle',18000)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <div class="product" data-category="Cycles">
 <div class="product-image">🚴</div>
 <div class="product-info">
-<h3>Kids Bicycle</h3><div class="product-category">Cycles</div>
+<h3>Kids Bicycle</h3>
+<div class="product-category">Cycles</div>
 <div class="price">Rs. 9,000</div>
 <button class="add-btn" onclick="addToCart('Kids Bicycle',9000)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <div class="product" data-category="Cycles">
 <div class="product-image">⚙️</div>
 <div class="product-info">
-<h3>Cycle Accessories</h3><div class="product-category">Cycles</div>
+<h3>Cycle Accessories</h3>
+<div class="product-category">Cycles</div>
 <div class="price">Rs. 500</div>
 <button class="add-btn" onclick="addToCart('Cycle Accessories',500)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <!-- FURNITURE -->
+
 <div class="product" data-category="Furniture">
 <div class="product-image">🛋️</div>
 <div class="product-info">
-<h3>Sofa Set</h3><div class="product-category">Furniture</div>
+<h3>Sofa Set</h3>
+<div class="product-category">Furniture</div>
 <div class="price">Rs. 65,000</div>
 <button class="add-btn" onclick="addToCart('Sofa Set',65000)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <div class="product" data-category="Furniture">
 <div class="product-image">🪑</div>
 <div class="product-info">
-<h3>Chair</h3><div class="product-category">Furniture</div>
+<h3>Chair</h3>
+<div class="product-category">Furniture</div>
 <div class="price">Rs. 3,500</div>
 <button class="add-btn" onclick="addToCart('Chair',3500)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <div class="product" data-category="Furniture">
 <div class="product-image">🛏️</div>
 <div class="product-info">
-<h3>Bed</h3><div class="product-category">Furniture</div>
+<h3>Bed</h3>
+<div class="product-category">Furniture</div>
 <div class="price">Rs. 35,000</div>
 <button class="add-btn" onclick="addToCart('Bed',35000)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <!-- GARMENTS -->
+
 <div class="product" data-category="Garments">
 <div class="product-image">👕</div>
 <div class="product-info">
-<h3>Men T-Shirt</h3><div class="product-category">Garments</div>
+<h3>Men T-Shirt</h3>
+<div class="product-category">Garments</div>
 <div class="price">Rs. 1,200</div>
 <button class="add-btn" onclick="addToCart('Men T-Shirt',1200)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <div class="product" data-category="Garments">
 <div class="product-image">👗</div>
 <div class="product-info">
-<h3>Women's Dress</h3><div class="product-category">Garments</div>
+<h3>Women's Dress</h3>
+<div class="product-category">Garments</div>
 <div class="price">Rs. 2,500</div>
 <button class="add-btn" onclick="addToCart('Womens Dress',2500)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <div class="product" data-category="Garments">
 <div class="product-image">👖</div>
 <div class="product-info">
-<h3>Jeans</h3><div class="product-category">Garments</div>
+<h3>Jeans</h3>
+<div class="product-category">Garments</div>
 <div class="price">Rs. 2,000</div>
 <button class="add-btn" onclick="addToCart('Jeans',2000)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <!-- STATIONERY -->
+
 <div class="product" data-category="Stationery">
 <div class="product-image">📓</div>
 <div class="product-info">
-<h3>Notebooks</h3><div class="product-category">Stationery</div>
+<h3>Notebooks</h3>
+<div class="product-category">Stationery</div>
 <div class="price">Rs. 150</div>
 <button class="add-btn" onclick="addToCart('Notebooks',150)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <div class="product" data-category="Stationery">
 <div class="product-image">✏️</div>
 <div class="product-info">
-<h3>Pencils</h3><div class="product-category">Stationery</div>
+<h3>Pencils</h3>
+<div class="product-category">Stationery</div>
 <div class="price">Rs. 30</div>
 <button class="add-btn" onclick="addToCart('Pencils',30)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 <div class="product" data-category="Stationery">
 <div class="product-image">🖊️</div>
 <div class="product-info">
-<h3>Pens</h3><div class="product-category">Stationery</div>
+<h3>Pens</h3>
+<div class="product-category">Stationery</div>
 <div class="price">Rs. 50</div>
 <button class="add-btn" onclick="addToCart('Pens',50)">Add to Cart</button>
-</div></div>
+</div>
+</div>
 
 </div>
 </section>
 
-<!-- CART -->
+<!-- SHOPPING CART -->
+
 <section id="cart">
-<h2 class="heading">Shopping <span>Cart 🛒</span></h2>
+
+<h2 class="heading">
+Shopping <span>Cart 🛒</span>
+</h2>
+
 <div class="cart">
+
 <h3>Selected Products</h3>
-<div id="cartItems">Your cart is empty.</div>
-<h3 style="margin-top:20px">Total: Rs. <span id="total">0</span></h3>
-<button class="checkout" onclick="checkout()">Order on WhatsApp</button>
+
+<div id="cartItems">
+Your cart is empty.
+</div>
+
+<h3 style="margin-top:20px">
+Total: Rs. <span id="total">0</span>
+</h3>
+
+<button class="checkout" onclick="checkout()">
+Order on WhatsApp
+</button>
+
 </div>
 </section>
 
 <!-- CONTACT -->
+
 <section class="contact" id="contact">
+
 <h2>Contact Alnoor Mart</h2>
-<p>Shop with us and enjoy shopping from different departments.<br>
-For orders and inquiries, contact us directly on WhatsApp.</p>
+
+<p>
+Shop with us and enjoy shopping from different departments.<br>
+For orders and inquiries, contact us directly on WhatsApp.
+</p>
+
 <a class="whatsapp" id="contactWhatsapp" href="#" target="_blank">
 ☎ Chat With Us on WhatsApp
 </a>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
+
 <h2>🛒 ALNOOR MART</h2>
+
 <p>Everything You Need Under One Roof!</p>
+
 <p>Grocery | Cycles | Furniture | Garments | Stationery</p>
+
 <p>© 2026 Alnoor Mart. All Rights Reserved.</p>
+
 </footer>
 
 <script>
 
-// CHANGE TO YOUR WHATSAPP NUMBER
+// YOUR WHATSAPP NUMBER
 const whatsappNumber = "923006235832";
 
 let cart = [];
 
+// FILTER PRODUCTS
+
 function filterProducts(category,button) {
-    document.querySelectorAll(".product").forEach(product=>{
+
+    document.querySelectorAll(".product").forEach(product => {
+
         product.style.display =
-        category === "All" || product.dataset.category === category
+        category === "All" ||
+        product.dataset.category === category
         ? "block" : "none";
+
     });
 
-    document.querySelectorAll(".filter-btn").forEach(btn=>{
+    document.querySelectorAll(".filter-btn").forEach(btn => {
         btn.classList.remove("active");
     });
 
-    if(button) button.classList.add("active");
-    else {
-        document.querySelectorAll(".filter-btn").forEach(btn=>{
-            if(btn.textContent.trim() === category)
+    if(button) {
+        button.classList.add("active");
+    } else {
+        document.querySelectorAll(".filter-btn").forEach(btn => {
+            if(btn.textContent.trim() === category) {
                 btn.classList.add("active");
+            }
         });
     }
 
-    document.getElementById("products").scrollIntoView({behavior:"smooth"});
+    document.getElementById("products").scrollIntoView({
+        behavior:"smooth"
+    });
+
 }
+
+// ADD TO CART
 
 function addToCart(name,price) {
-    let existing = cart.find(item=>item.name===name);
-    if(existing) existing.quantity++;
-    else cart.push({name,price,quantity:1});
+
+    let existing = cart.find(item => item.name === name);
+
+    if(existing) {
+        existing.quantity++;
+    } else {
+        cart.push({
+            name:name,
+            price:price,
+            quantity:1
+        });
+    }
+
     updateCart();
-    alert(name+" added to your cart!");
+
+    alert(name + " added to your cart!");
+
 }
 
+// UPDATE CART
+
 function updateCart() {
+
     let area = document.getElementById("cartItems");
     let total = 0;
 
-    if(cart.length===0) {
-        area.innerHTML="Your cart is empty.";
-        document.getElementById("total").innerText=0;
+    if(cart.length === 0) {
+
+        area.innerHTML = "Your cart is empty.";
+
+        document.getElementById("total").innerText = 0;
+
         return;
     }
 
-    area.innerHTML="";
+    area.innerHTML = "";
 
-    cart.forEach((item,index)=>{
-        let subtotal=item.price*item.quantity;
-        total+=subtotal;
-        area.innerHTML+=`
+    cart.forEach((item,index) => {
+
+        let subtotal = item.price * item.quantity;
+
+        total += subtotal;
+
+        area.innerHTML += `
         <div class="cart-item">
+
             <div>
                 <b>${item.name}</b><br>
                 Rs. ${item.price} × ${item.quantity}
                 = Rs. ${subtotal}
             </div>
-            <button class="remove-btn" onclick="removeItem(${index})">
-                Remove
+
+            <button class="remove-btn"
+            onclick="removeItem(${index})">
+            Remove
             </button>
-        </div>`;
+
+        </div>
+        `;
+
     });
 
-    document.getElementById("total").innerText=total;
+    document.getElementById("total").innerText = total;
+
 }
+
+// REMOVE ITEM
 
 function removeItem(index) {
+
     cart.splice(index,1);
+
     updateCart();
+
 }
 
+// WHATSAPP CHECKOUT
+
 function checkout() {
-    if(cart.length===0) {
+
+    if(cart.length === 0) {
+
         alert("Please add products to your cart first.");
+
         return;
     }
 
-    let message="Hello Alnoor Mart! I want to place an order:\n\n";
-    let total=0;
+    let message =
+    "Hello Alnoor Mart! I want to place an order:\n\n";
 
-    cart.forEach(item=>{
-        let subtotal=item.price*item.quantity;
-        total+=subtotal;
-        message+=item.name+" x "+item.quantity+
-        " = Rs. "+subtotal+"\n";
+    let total = 0;
+
+    cart.forEach(item => {
+
+        let subtotal = item.price * item.quantity;
+
+        total += subtotal;
+
+        message += item.name +
+        " x " + item.quantity +
+        " = Rs. " + subtotal + "\n";
+
     });
 
-    message+="\nTotal: Rs. "+total;
-    message+="\n\nPlease confirm availability and delivery.";
-    message+="\nMy Name:\nMy Address:\n";
+    message += "\nTotal: Rs. " + total;
+
+    message += "\n\nPlease confirm availability and delivery.";
+
+    message += "\nMy Name:\nMy Address:\n";
 
     window.open(
-        "https://wa.me/"+whatsappNumber+
-        "?text="+encodeURIComponent(message),
+        "https://wa.me/" + whatsappNumber +
+        "?text=" + encodeURIComponent(message),
         "_blank"
     );
+
 }
 
-document.getElementById("contactWhatsapp").href=
-"https://wa.me/"+whatsappNumber;
+// CONTACT WHATSAPP
+
+document.getElementById("contactWhatsapp").href =
+"https://wa.me/" + whatsappNumber;
 
 </script>
 
